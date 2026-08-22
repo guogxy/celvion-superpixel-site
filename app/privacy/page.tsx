@@ -13,7 +13,7 @@ const en: LegalContent = {
     { heading: '2. Information the App accesses', bullets: [
       'Camera: live preview and the RAW or JPG frames you choose to capture.',
       'Motion: device motion samples used locally to support frame alignment and capture guidance.',
-      'Photo Library add access: used only when you choose to save a finished image to Apple Photos.',
+      'Photo Library add access: used to save an authentic True Super Resolution fusion automatically after success; other finished images are added only when you choose Save to Photos. Failed attempts and fallback references are not saved automatically.',
       'Location: used only when you enable saving the capture location; location is written to the result locally and is not uploaded to the developer.',
       'Preferences and recovery state: format, quality, AI-upscale preference, and limited task state stored in the app sandbox.',
       'Device conditions: available memory, storage, processor capability, Low Power Mode, and thermal state used locally to keep capture and processing within safe limits.',
@@ -35,7 +35,14 @@ const zh: LegalContent = {
   summary: '拍摄、对齐、MFSR 重建、可选 Core ML 增强与导出均在你的 iPhone 上完成。Celvion SuperPixel 不运营照片处理服务器。',
   sections: [
     { heading: '一、适用范围', paragraphs: ['本政策适用于 Celvion SuperPixel iPhone App 及本官方网站，说明 App 为完成多帧拍摄、图像重建、可选增强和保存成片而使用的信息。'] },
-    { heading: '二、App 访问的信息', bullets: ['相机：实时取景以及你主动拍摄的 RAW 或 JPG 多帧画面。', '运动信息：仅在本地用于帮助帧间对齐与拍摄引导。', '照片图库添加权限：仅在你选择“保存到照片”时写入成片。', '位置：仅在你开启保存拍摄位置时使用；位置信息在本地写入结果，不会上传给开发者。', '偏好与恢复状态：格式、质量、AI 放大选择和有限的任务状态保存在 App 沙盒中。', '设备运行状态：可用内存、存储空间、处理器能力、低电量模式和温度状态仅在本地用于安全调节拍摄与处理。'] },
+    { heading: '二、App 访问的信息', bullets: [
+      '相机：实时取景以及你主动拍摄的 RAW 或 JPG 多帧画面。',
+      '运动信息：仅在本地用于帮助帧间对齐与拍摄引导。',
+      '照片图库添加权限：真实超分通过真实性验证后会自动写入融合成片；其他成片仅在你选择“保存到照片”时写入。失败尝试与降级参考图不会自动保存。',
+      '位置：仅在你开启保存拍摄位置时使用；位置信息在本地写入结果，不会上传给开发者。',
+      '偏好与恢复状态：格式、质量、AI 放大选择和有限的任务状态保存在 App 沙盒中。',
+      '设备运行状态：可用内存、存储空间、处理器能力、低电量模式和温度状态仅在本地用于安全调节拍摄与处理。',
+    ] },
     { heading: '三、设备端处理', paragraphs: ['拍摄帧、临时图像数据、Celvion MFSR 处理、Core ML 推理和导出均留在设备上。Celvion SuperPixel 不会把原始帧、RAW 文件或结果上传到开发者运营的服务器。', 'Apple 系统服务可能依据 Apple 自身的隐私条款处理照片图库、相机、位置权限和 App Store 分发。'] },
     { heading: '四、收集、跟踪与共享', paragraphs: ['Celvion SuperPixel 当前不要求开发者账户，不包含广告、跨 App 跟踪、第三方分析 SDK 或开发者运营的远程诊断服务。开发者不收集、出售或共享你的照片、设备标识符、位置历史或 App 使用画像。', '当你通过 iOS 分享菜单发送结果时，该传输由你主动发起，接收方会按照自身隐私规则处理内容。'] },
     { heading: '五、存储与保留', paragraphs: ['私有拍摄帧和临时文件可能在任务执行期间保存在 App 沙盒，并会在正常清理、后续恢复清理、卸载 App 或 iOS 存储管理时移除。成片会保留在 App 作品库或系统照片中，直至你删除。', '导出文件可能保留相机、拍摄时间，或你主动选择保留的位置元数据。分享敏感照片前请检查元数据。'] },

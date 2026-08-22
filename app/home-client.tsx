@@ -11,21 +11,21 @@ const copy = {
   en: {
     navFeatures: 'Features', navSupport: 'Support', navPrivacy: 'Privacy', language: '中文',
     eyebrow: 'Computational telephoto camera', title: 'See more detail.\nFrom your iPhone.',
-    lede: 'Celvion SuperPixel captures a short burst, reconstructs fine detail with an independently developed MFSR pipeline, and finishes the result entirely on your iPhone.',
+    lede: 'Celvion SuperPixel captures multiple observations and processes them entirely on your iPhone. Smart Capture labels any fallback honestly; True Super Resolution publishes only results that pass its authenticity checks.',
     soon: 'Coming to the App Store', support: 'Get support',
-    note: 'Designed for iPhone — from single-camera models to Pro telephoto systems.',
+    note: 'Designed for supported iPhone rear-camera systems — from single-camera models to Pro telephoto hardware.',
     workflowEyebrow: 'Native camera. Serious computation.', workflowTitle: 'A clearer way to reach farther.',
     workflowBody: 'SuperPixel uses the physical camera available on your iPhone, then adds carefully bounded multi-frame reconstruction instead of pretending a crop is optical zoom.',
     features: [
-      ['01', 'Capture a real burst', 'RAW or JPG capture uses Apple camera frameworks and the physical lens selected for the shot.'],
-      ['02', 'Reconstruct, not just resize', 'Celvion MFSR aligns multiple observations and reconstructs additional spatial detail on device.'],
-      ['03', 'Choose the final finish', 'Keep the direct fusion result or enable optional Real-ESRGAN 2× enhancement for a larger output.'],
-      ['04', 'Save with context', 'Export the finished image while preserving an honest record of the capture and processing path.'],
+      ['01', 'Capture a real burst', 'JPG uses Apple camera frameworks and the selected physical lens; Bayer RAW is offered only when that lens reports support.'],
+      ['02', 'Reconstruct, not just resize', 'Only multi-frame results that pass the formal authenticity checks are labeled True Super Resolution.'],
+      ['03', 'Choose the final finish', 'Eligible fusion results can use optional on-device AI denoising, about 2× pixel-area enhancement, or 2× edge-length enhancement. Actual size remains visible.'],
+      ['04', 'Truthful result states', 'The app distinguishes authentic fusion, single-frame fallback, multi-frame fallback, and neural enhancement. Standard EXIF and GPS are exported only as configured.'],
     ],
-    reachEyebrow: 'Built for every iPhone camera', reachTitle: 'Longer reach for Air.\nFarther still for Pro.',
-    reachBody: 'On iPhone models without a physical telephoto lens, SuperPixel is designed to turn multi-frame information into a more useful 2×–4× view. On Pro models, it starts from the best available physical lens and extends from there.',
-    rawTitle: 'RAW when the lens supports it. JPG when it does not.',
-    rawBody: 'SuperPixel checks the selected physical camera at runtime. The RAW/JPG control reflects what that lens can actually deliver, with a safe JPG fallback when Bayer RAW is unavailable.',
+    reachEyebrow: 'For supported iPhone camera systems', reachTitle: 'Computed reach for Air.\nPhysical telephoto first on Pro.',
+    reachBody: 'On iPhone models without a physical telephoto lens, SuperPixel uses multi-frame evidence to improve supported 2×–4× computational views when the scene allows it. On Pro models, it first selects an available physical lens, then applies bounded reconstruction. Results vary with light, motion, focus, hardware, and temperature.',
+    rawTitle: 'Bayer RAW when the physical lens exposes it. JPG otherwise.',
+    rawBody: 'SuperPixel checks the selected physical camera at runtime. Smart Capture can use JPG when RAW is unavailable. True Super Resolution never relabels a fallback as an authentic result.',
     privacyEyebrow: 'Private by design', privacyTitle: 'Your photos stay on your iPhone.',
     privacyBody: 'Capture, alignment, MFSR reconstruction, optional AI enhancement, and export happen locally. No account, advertising tracker, or developer photo server is required.',
     privacyLink: 'Read the privacy policy', footer: 'All rights reserved.',
@@ -33,21 +33,21 @@ const copy = {
   zh: {
     navFeatures: '功能', navSupport: '支持', navPrivacy: '隐私', language: 'EN',
     eyebrow: '计算长焦相机', title: '让手里的镜头，\n看见更多细节。',
-    lede: 'Celvion SuperPixel 连续捕捉多帧画面，通过独立开发的 MFSR 流程重建细节，再在你的 iPhone 上完成全部处理。',
+    lede: 'Celvion SuperPixel 连续采集多次观测，并在 iPhone 本机完成处理。“智能成片”会如实标注降级结果；“真实超分”只发布通过真实性验证的成片。',
     soon: '即将登陆 App Store', support: '获取支持',
-    note: '为不同 iPhone 相机系统而设计——从单摄机型到 Pro 长焦。',
+    note: '面向受支持的 iPhone 后置相机系统——从单摄机型到 Pro 长焦硬件。',
     workflowEyebrow: '原生相机，认真计算', workflowTitle: '用更清晰的方式，看得更远。',
     workflowBody: 'SuperPixel 先调用 iPhone 实际可用的物理镜头，再进行有边界的多帧重建；不会把普通裁切冒充成光学变焦。',
     features: [
-      ['01', '真实多帧采集', 'RAW 或 JPG 均通过 Apple 原生相机框架，从本次选定的物理镜头采集。'],
-      ['02', '重建，而不只是放大', 'Celvion MFSR 在设备端对齐多次观测，并重建额外的空间细节。'],
-      ['03', '成片方式由你选择', '可直接保留融合结果，也可开启 Real-ESRGAN 2× 进一步放大。'],
-      ['04', '带着处理依据保存', '导出成片时，保留真实的采集与处理路径信息。'],
+      ['01', '真实多帧采集', 'JPG 通过 Apple 原生相机框架从所选物理镜头采集；只有该镜头实际支持时才提供 Bayer RAW。'],
+      ['02', '重建，而不只是放大', '只有通过正式真实性验证的多帧结果，才会被标记为“真实超分”。'],
+      ['03', '成片方式由你选择', '符合条件的融合结果可使用设备端 AI 降噪、约 2× 像素面积增强或 2× 边长增强，实际尺寸始终可见。'],
+      ['04', '结果状态如实标注', 'App 会区分真实融合、单帧降级、多帧降级与神经增强；标准 EXIF 与 GPS 仅按你的设置导出。'],
     ],
-    reachEyebrow: '为每一种 iPhone 相机而做', reachTitle: '让 Air 拥有计算长焦，\n让 Pro 延伸原生长焦。',
-    reachBody: '在没有物理长焦的 iPhone 上，SuperPixel 通过多帧信息让 2×–4× 视角更有实用价值；在 Pro 机型上，它会先使用最合适的物理镜头，再从那里继续延伸。',
-    rawTitle: '镜头支持就用 RAW，不支持就安全回到 JPG。',
-    rawBody: 'SuperPixel 会在运行时检查当前物理镜头。RAW/JPG 按钮只显示这颗镜头真正具备的能力；Bayer RAW 不可用时会明确回退到 JPG。',
+    reachEyebrow: '面向受支持的 iPhone 相机系统', reachTitle: 'Air 使用多帧计算，\nPro 优先调用物理长焦。',
+    reachBody: '在没有物理长焦的 iPhone 上，SuperPixel 会在场景证据足够时，利用多帧信息改善受支持的 2×–4× 计算视角；在 Pro 机型上，它会先选择可用的物理镜头，再进行有边界的重建。实际结果会受光线、运动、对焦、硬件与温度影响。',
+    rawTitle: '物理镜头提供 Bayer RAW 才使用 RAW，否则使用 JPG。',
+    rawBody: 'SuperPixel 会在运行时检查当前物理镜头。“智能成片”可在 RAW 不可用时使用 JPG；“真实超分”不会把降级结果重新标成真实超分。',
     privacyEyebrow: '隐私优先', privacyTitle: '照片始终留在你的 iPhone。',
     privacyBody: '拍摄、对齐、MFSR 重建、可选 AI 增强与导出均在本地完成，无需账户、广告跟踪器或开发者照片服务器。',
     privacyLink: '阅读隐私政策', footer: '保留所有权利。',
@@ -78,7 +78,7 @@ export default function HomeClient() {
     <main id="main">
       <section className="hero shell">
         <div className="hero-copy"><p className="eyebrow">{t.eyebrow}</p><h1>{t.title.split('\n').map((line, index) => <span key={line} className={index ? 'gradient-text' : ''}>{line}</span>)}</h1><p className="lede">{t.lede}</p><div className="button-row"><span className="button primary">{t.soon}</span><Link className="button secondary" href="/support">{t.support} <span aria-hidden="true">↗</span></Link></div><p className="availability">{t.note}</p></div>
-        <div className="phone-stage" aria-label="Celvion SuperPixel camera interface preview"><div className="glow glow-cyan" /><div className="glow glow-magenta" /><div className="phone-frame"><Image src={`${basePath}/assets/camera-preview.png`} alt="Celvion SuperPixel camera interface showing multi-frame RAW capture" width={852} height={1844} priority /></div><div className="capture-chip chip-one"><strong>8–10</strong><span>{language === 'zh' ? '帧计算' : 'frames'}</span></div><div className="capture-chip chip-two"><strong>RAW</strong><span>{language === 'zh' ? '原生采集' : 'native capture'}</span></div></div>
+        <div className="phone-stage" aria-label="Celvion SuperPixel camera interface preview"><div className="glow glow-cyan" /><div className="glow glow-magenta" /><div className="phone-frame"><Image src={`${basePath}/assets/camera-preview.png`} alt="Celvion SuperPixel camera interface showing multi-frame RAW capture" width={852} height={1844} priority /></div><div className="capture-chip chip-one"><strong>10–12</strong><span>{language === 'zh' ? '首轮候选' : 'first pass'}</span></div><div className="capture-chip chip-two"><strong>RAW</strong><span>{language === 'zh' ? '原生采集' : 'native capture'}</span></div></div>
       </section>
       <section className="feature-section" id="features"><div className="shell"><div className="section-heading"><div><p className="eyebrow">{t.workflowEyebrow}</p><h2>{t.workflowTitle}</h2></div><p>{t.workflowBody}</p></div><div className="feature-grid">{t.features.map(([number, title, body]) => <article className="feature-card" key={number}><span>{number}</span><h3>{title}</h3><p>{body}</p></article>)}</div></div></section>
       <section className="reach-section shell"><div className="reach-visual" aria-hidden="true"><div className="lens-ring ring-one"><span>1×</span></div><div className="lens-ring ring-two"><span>2×</span></div><div className="lens-ring ring-four"><span>4×</span></div><div className="detail-grid" /></div><div className="reach-copy"><p className="eyebrow">{t.reachEyebrow}</p><h2>{t.reachTitle.split('\n').map(line => <span key={line}>{line}</span>)}</h2><p>{t.reachBody}</p></div></section>
