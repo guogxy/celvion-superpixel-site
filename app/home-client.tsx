@@ -10,7 +10,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 const copy = {
   en: {
     navFeatures: 'Features', navSupport: 'Support', navPrivacy: 'Privacy', language: '中文',
-    eyebrow: 'Computational telephoto camera', title: 'More detail.\nFrom the camera you have.',
+    eyebrow: 'Computational telephoto camera', title: 'See more detail.\nFrom your iPhone.',
     lede: 'Celvion SuperPixel captures a short burst, reconstructs fine detail with an independently developed MFSR pipeline, and finishes the result entirely on your iPhone.',
     soon: 'Coming to the App Store', support: 'Get support',
     note: 'Designed for iPhone — from single-camera models to Pro telephoto systems.',
@@ -22,7 +22,7 @@ const copy = {
       ['03', 'Choose the final finish', 'Keep the direct fusion result or enable optional Real-ESRGAN 2× enhancement for a larger output.'],
       ['04', 'Save with context', 'Export the finished image while preserving an honest record of the capture and processing path.'],
     ],
-    reachEyebrow: 'Built for every iPhone camera', reachTitle: 'Computational reach for Air.\nNative reach for Pro.',
+    reachEyebrow: 'Built for every iPhone camera', reachTitle: 'Longer reach for Air.\nFarther still for Pro.',
     reachBody: 'On iPhone models without a physical telephoto lens, SuperPixel is designed to turn multi-frame information into a more useful 2×–4× view. On Pro models, it starts from the best available physical lens and extends from there.',
     rawTitle: 'RAW when the lens supports it. JPG when it does not.',
     rawBody: 'SuperPixel checks the selected physical camera at runtime. The RAW/JPG control reflects what that lens can actually deliver, with a safe JPG fallback when Bayer RAW is unavailable.',
